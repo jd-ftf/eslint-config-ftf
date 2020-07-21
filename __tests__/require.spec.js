@@ -1,7 +1,7 @@
 const { CLIEngine } = require('eslint');
 const { resolve } = require('path');
+const config = require('eslint-config-ftf');
 const eslintrc = require('./fixtures/eslintConfig');
-const config = require('../index');
 
 test('should load config correctly', () => {
   const cli = new CLIEngine({
