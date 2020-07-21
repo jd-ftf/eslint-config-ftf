@@ -23,7 +23,7 @@ cd eslint-config-ftf
 # 先安装依赖包
 npm ci
 # 将本地工程映射为 node package
-npm link eslint-config-ftf
+npm link ./
 # 单元测试
 npm test
 ```
