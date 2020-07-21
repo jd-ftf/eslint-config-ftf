@@ -1,6 +1,7 @@
 module.exports = {
   extends: [
     './rules/airbnb',
+    './rules/jsx',
     './rules/babel',
     './rules/vue',
     './rules/custom'
