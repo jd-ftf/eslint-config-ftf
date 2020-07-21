@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "FTF's ESLint config, following our styleguide",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "fix": "cross-env EFF_ABSOLUTE_PATHS=true eslint --fix --ext .js ./ --format friendly"
   },
   "files": [
     "rules",

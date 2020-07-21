@@ -1,6 +1,6 @@
 module.exports = {
   plugins: [
-    'babel',
+    'babel'
   ],
   rules: {
     'babel/new-cap': 1,
@@ -10,6 +10,6 @@ module.exports = {
     'babel/quotes': 1,
     'babel/semi': 1,
     'babel/no-unused-expressions': 1,
-    'babel/valid-typeof': 1,
-  },
+    'babel/valid-typeof': 1
+  }
 };

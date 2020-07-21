@@ -23,14 +23,14 @@ module.exports = {
         // 优化代码
         'perf',
         // 文档相关
-        'docs',
-      ],
+        'docs'
+      ]
     ],
     'scope-case': [2, 'always',
       [
         'lower-case',
-        'camel-case',
-      ],
-    ],
-  },
+        'camel-case'
+      ]
+    ]
+  }
 };

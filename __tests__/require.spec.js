@@ -1,11 +1,11 @@
 const { CLIEngine } = require('eslint');
 const { resolve } = require('path');
+const eslintrc = require('./fixtures/eslintConfig');
 const config = require('../index');
 
 test('should load config correctly', () => {
   const cli = new CLIEngine({
-    cwd: resolve(__dirname, 'fixtures'),
-    useEslintrc: true,
+    baseConfig: eslintrc
   });
   const { parser, parserOptions, plugins } = cli.getConfigForFile(resolve(__dirname, 'fixtures', 'empty.vue'));
   expect(parser)

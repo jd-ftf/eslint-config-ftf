@@ -4,10 +4,10 @@ module.exports = {
   clearMocks: true,
   coverageProvider: 'v8',
   roots: [
-    '<rootDir>',
+    '<rootDir>'
   ],
   testEnvironment: 'node',
   testMatch: [
-    '<rootDir>/__tests__/*.spec.js',
-  ],
+    '<rootDir>/__tests__/*.spec.js'
+  ]
 };
