@@ -5,9 +5,12 @@ const eslintrc = require('./fixtures/eslintConfig');
 
 test('should load config correctly', () => {
   const cli = new CLIEngine({
-    baseConfig: eslintrc
+    baseConfig: eslintrc,
+    useEslintrc: false
   });
-  const { parser, parserOptions, plugins } = cli.getConfigForFile(resolve(__dirname, 'fixtures', 'empty.vue'));
+  const {
+    parser, parserOptions, plugins
+  } = cli.getConfigForFile(resolve(__dirname, 'fixtures', 'empty.vue'));
   expect(parser)
     .toEqual(expect.stringContaining(config.parser));
   expect(parserOptions.parser)
