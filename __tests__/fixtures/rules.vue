@@ -9,6 +9,7 @@
 const obj = {
   proper: 1,
 };
+const arr = [1, 2];
 
 export default {
   props: {
@@ -16,6 +17,7 @@ export default {
   },
   data() {
     const { proper } = obj;
+    const arr2 = arr[1];
 
     const a = void 0;
     let i = 0;
