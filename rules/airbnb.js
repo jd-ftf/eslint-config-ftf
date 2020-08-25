@@ -11,7 +11,7 @@ module.exports = {
         object: true
       },
       AssignmentExpression: {
-        array: true,
+        array: false,
         object: true
       }
     }] // 将 array 的解构赋值关掉，没有对象好操作
